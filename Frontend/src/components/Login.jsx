@@ -44,14 +44,14 @@ function Login() {
                 <h1 className='text-2xl '>Login</h1>
                 <form onSubmit={handleLogin} className='flex flex-col my-3' action="">
                     <div className='my-2'>
-                        <input className='w-90 h-12 focus:outline-0 border-1 p-2 rounded-md' type="text" placeholder='Enter Your Name' value={username} onChange={(e) => setUsername(e.target.value)} />
+                        <input className='w-90 h-12 focus:outline-0 border-[1.5px] p-2 rounded-md' type="text" placeholder='Enter Your Name' value={username} onChange={(e) => setUsername(e.target.value)} />
                     </div>
                     <div className='my-2'>
-                        <input className='w-90 h-12 focus:outline-0 border-1 p-2 rounded-md' type="password" placeholder='Enter Your Password' value={password} onChange={(e) => setPassword(e.target.value)} />
+                        <input className='w-90 h-12 focus:outline-0 border-[1.5px] p-2 rounded-md' type="password" placeholder='Enter Your Password' value={password} onChange={(e) => setPassword(e.target.value)} />
                     </div>
                     {errors && <div className='self-start text-sm text-red-600'>{errors}</div>}
-                    {loading ? <input className='mt-2 border-1 self-center px-3 py-1 rounded-mdfont-semibold ' type="submit" value="Logging wait" disabled /> :
-                        <input className='mt-2 border-1 self-center px-3 py-1 rounded-md hover:bg-green-400 hover:text-black font-semibold hover:border-green-300' type="submit" value="submit" />}
+                    {loading ? <input className='mt-2 border-[1.5px] self-center px-3 py-1 rounded-mdfont-semibold ' type="submit" value="Logging wait" disabled /> :
+                        <input className='mt-2 border-[1.5px] self-center px-3 py-1 rounded-md hover:bg-green-400 hover:text-black font-semibold hover:border-green-300' type="submit" value="submit" />}
                     {success && <div className='py-3 text-lg bg-gray-600 text-green-400 mt-2'>Login Successfully</div>}
 
                 </form>
